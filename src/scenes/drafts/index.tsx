@@ -8,25 +8,26 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Benefit from "./Drafts";
+import DraftsPageGraphic from "@/assets/DraftsPageGraphic.jpg"
 
 const drafts: Array<DraftType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    title: "Risco 1",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Em construção",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
+    title: "Risco 2",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+    "Em construção",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    title: "Risco 3",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+    "Em construção",
   },
 ];
 
@@ -61,9 +62,13 @@ const Drafts = ({ setSelectedPage }: Props) => {
         >
           <HText>COMPRE AQUI O SEU RISCO!</HText>
           <p className="my-5 text-sm text-justify">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+          Explore nossa coleção de riscos prontos e dê vida às suas criações instantaneamente, 
+          ou opte por riscos personalizados feitos sob medida para transformar suas ideias em bordados únicos. 
+          Cada linha conta uma história, e cada ponto é um reflexo do seu estilo. 
+          Descubra a arte de bordar com a facilidade dos riscos prontos 
+          ou crie algo verdadeiramente exclusivo com nossos riscos personalizados por encomenda. 
+          Deixe sua imaginação fluir, e nós transformaremos seus sonhos em realidade com cada agulhada!
+          
           </p>
         </motion.div>
 
@@ -87,11 +92,12 @@ const Drafts = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* GRAPHICS AND DESCRIPTION */}
-        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+        <div className="mt-5 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* GRAPHIC */}
           <img
-            className="mx-auto"
+            className="before:absolute mt-20 before:-top-20 before:-left-20 before:z-[-1] "
             alt="drafts-page-graphic"
+            src={DraftsPageGraphic}
           />
 
           {/* DESCRIPTION */}
@@ -110,7 +116,7 @@ const Drafts = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                    ENTRE PARA O NOSSO CLUBE DE RISCOS{" "}
                     <span className="text-primary-500">FIT</span>
                   </HText>
                 </motion.div>
@@ -129,18 +135,13 @@ const Drafts = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
-              </p>
-              <p className="mb-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+              "Junte-se ao nosso exclusivo Clube de Riscos e experimente a emoção
+               de desbloquear um novo mundo de criatividade a cada mês! 
+               Como membro privilegiado, você receberá um risco cuidadosamente selecionado 
+               e inspirador diretamente em sua porta. Cada mês é uma nova jornada de expressão 
+               artística, uma oportunidade de transformar fios em obras de arte. 
+               Explore, crie e descubra a alegria contínua do bordado com o Clube de Riscos — 
+               onde a inspiração é entregue mensalmente."
               </p>
             </motion.div>
 
@@ -148,7 +149,7 @@ const Drafts = ({ setSelectedPage }: Props) => {
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Entre para o Clube de Riscos
                 </ActionButton>
               </div>
             </div>

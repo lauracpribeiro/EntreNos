@@ -1,34 +1,36 @@
 import { SelectedPage, ClassType } from "@/shared/types";
-import image1 from "@/assets/1encomenda.jpeg";
-import image2 from "@/assets/2encomenda.jpg";
+import marcela from "@/assets/marcela.jpeg";
+import oracaospace from "@/assets/oracaospace.jpg";
+import oracaopearl from "@/assets/oracaopearl.jpeg";
+import gabidiego from "@/assets/gabidiego.jpg";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "Aurora",
+    name: "Oração tema espaço",
     description:
-    "Porta maternidade floral para menina de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
-    image: image1,
+    "Porta maternidade com oração do anjo + tema espaço 20cm de diâmetro. Valor: R$ 150,00 + frete.",
+    image: oracaospace,
   },
   {
-    name: "Bento",
+    name: "Oração Anjo da Guarda",
     description:
-      "Porta maternidade fundo do mar para menino de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
-    image: image2,
+      "Porta maternidade com oração do anjo da guarda com 20cm de diâmetro. Valor: R$ 150,00 + frete.",
+    image: oracaopearl,
   },
   {
-    name: "Aurora",
+    name: "Porta Aliança Gabi e Diego",
     description:
-    "Porta maternidade floral para menina de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
-    image: image1,
+    "Porta aliança floral de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
+    image: gabidiego,
   },
   {
-    name: "Bento",
+    name: "Porta Maternidade Marcela",
     description:
-      "Porta maternidade fundo do mar para menino de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
-    image: image2,
+      "Porta maternidade arco-íris de 20cm de diâmetro. Valor: R$ 180,00 + frete.",
+    image: marcela,
   }
 ];
 
@@ -56,9 +58,11 @@ const Orders = ({ setSelectedPage }: Props) => {
           <div className="text-justify">
             <HText>ENCOMENDAS</HText>
             <p className="py-5">
-              Sabe aqueles bordados que são amor a primeira vista e que fomos
-              fazendo ao longo do tempo? Eles estão aqui disponíveis pra vocês!
-              Dos nossos corações para a casa de vocês! 
+            Transforme suas ideias em arte! 
+            Encomende bordados em bastidores feitos à mão, 
+            onde cada ponto conta uma história única. 
+            Personalize seu momento especial com detalhes artesanais e carinho. 
+            Deixe-nos criar algo extraordinário para você! 
             </p>
             </div>
         </motion.div>

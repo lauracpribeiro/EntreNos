@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" mx-auto w-1/3">
-        <p> @ 2023 - Powered by Entrenós. All rights reserved </p>
+        <p> @ 2023 - Powered by Laura Ribeiro. All rights reserved </p>
       </div>
     </footer>
   );
