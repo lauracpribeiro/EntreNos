@@ -7,7 +7,6 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import DraftsPageGraphic from "@/assets/DraftsPageGraphic.png";
 import Benefit from "./Drafts";
 
 const drafts: Array<DraftType> = [
@@ -93,7 +92,6 @@ const Drafts = ({ setSelectedPage }: Props) => {
           <img
             className="mx-auto"
             alt="drafts-page-graphic"
-            src={DraftsPageGraphic}
           />
 
           {/* DESCRIPTION */}
